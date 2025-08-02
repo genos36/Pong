@@ -1,0 +1,3 @@
+/home/esercitazioni/pong/CMakeFiles/Pong.dir
+/home/esercitazioni/pong/CMakeFiles/edit_cache.dir
+/home/esercitazioni/pong/CMakeFiles/rebuild_cache.dir
