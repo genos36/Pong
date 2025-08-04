@@ -3,35 +3,49 @@
 
 #pragma once
 #include <SFML/Graphics.hpp>
-#include <vector>
+#include <list>
+#include "GameObject.h"
 
-class Ball {   
+class Ball:public GameObject {   
 private:
     sf::CircleShape shape_;
     sf::Vector2f velocity_;
     sf::Vector2f startPosition_;
-    float speed_;
-    std::vector<sf::CircleShape> trail_;
-public:
-    Ball(float radius, const sf::Vector2f & position);
+    std::list<sf::CircleShape> trail_;
+protected:
+    void onBoundaryHit()override;
+
+    public:
     
+    Ball(float radius, const sf::Vector2f & position, GameObject* parent=nullptr);
+    
+    void syncTransform() override ;
+    
+    void update(float deltaTime) override;
 
+    void draw(sf::RenderTarget& target) const override;
 
-    void update(float deltaTime);
-    void draw(sf::RenderWindow& window);
+    sf::FloatRect getGlobalBounds() const override;
+
+    void handleCollision(GameObject& other) override;
+
+    void setPosition(const sf::Vector2f& position)override;
+
+    void move(const sf::Vector2f& offset);
+
     void reset();
     void bounceX();
     void bounceY();
     void setFillColor(sf::Color color);
 
-    const sf::Vector2f getPosition() const;
-    const sf::Vector2f& getVelocity() const;
-    const sf::FloatRect getGlobalBounds() const;
+    sf::Vector2f getVelocity() const;
+
+
+
 
     void setVelocity(const sf::Vector2f& velocity);
 
     void updateTrail();
-
 };
 
 #endif
