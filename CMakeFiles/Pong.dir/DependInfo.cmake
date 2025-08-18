@@ -8,10 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/esercitazioni/pong/src/AIPlayer.cpp" "CMakeFiles/Pong.dir/src/AIPlayer.cpp.o" "gcc" "CMakeFiles/Pong.dir/src/AIPlayer.cpp.o.d"
   "/home/esercitazioni/pong/src/Ball.cpp" "CMakeFiles/Pong.dir/src/Ball.cpp.o" "gcc" "CMakeFiles/Pong.dir/src/Ball.cpp.o.d"
   "/home/esercitazioni/pong/src/Game.cpp" "CMakeFiles/Pong.dir/src/Game.cpp.o" "gcc" "CMakeFiles/Pong.dir/src/Game.cpp.o.d"
+  "/home/esercitazioni/pong/src/GameObject.cpp" "CMakeFiles/Pong.dir/src/GameObject.cpp.o" "gcc" "CMakeFiles/Pong.dir/src/GameObject.cpp.o.d"
+  "/home/esercitazioni/pong/src/HumanPlayer.cpp" "CMakeFiles/Pong.dir/src/HumanPlayer.cpp.o" "gcc" "CMakeFiles/Pong.dir/src/HumanPlayer.cpp.o.d"
   "/home/esercitazioni/pong/src/Paddle.cpp" "CMakeFiles/Pong.dir/src/Paddle.cpp.o" "gcc" "CMakeFiles/Pong.dir/src/Paddle.cpp.o.d"
-  "/home/esercitazioni/pong/src/Player.cpp" "CMakeFiles/Pong.dir/src/Player.cpp.o" "gcc" "CMakeFiles/Pong.dir/src/Player.cpp.o.d"
   "/home/esercitazioni/pong/src/Score.cpp" "CMakeFiles/Pong.dir/src/Score.cpp.o" "gcc" "CMakeFiles/Pong.dir/src/Score.cpp.o.d"
   "/home/esercitazioni/pong/src/main.cpp" "CMakeFiles/Pong.dir/src/main.cpp.o" "gcc" "CMakeFiles/Pong.dir/src/main.cpp.o.d"
   )

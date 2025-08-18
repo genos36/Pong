@@ -16,7 +16,7 @@ target_compile_definitions(${PROJECT_NAME} PRIVATE
 )
 
 # Dipendenze
-find_package(SFML 2.6 REQUIRED COMPONENTS graphics window system)
+find_package(SFML 2.5 REQUIRED COMPONENTS graphics window system)
 target_link_libraries(${PROJECT_NAME} PRIVATE 
     sfml-graphics 
     sfml-window 

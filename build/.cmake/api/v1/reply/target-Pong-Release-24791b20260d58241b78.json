@@ -294,6 +294,12 @@
 			{
 				"command" : 2,
 				"file" : 8,
+				"line" : 1191,
+				"parent" : 28
+			},
+			{
+				"command" : 2,
+				"file" : 8,
 				"line" : 1251,
 				"parent" : 28
 			},
@@ -493,37 +499,37 @@
 				"command" : 4,
 				"file" : 7,
 				"line" : 76,
-				"parent" : 75
+				"parent" : 76
 			},
 			{
 				"file" : 13,
-				"parent" : 76
+				"parent" : 77
 			},
 			{
 				"command" : 3,
 				"file" : 13,
 				"line" : 16,
-				"parent" : 77
+				"parent" : 78
 			},
 			{
 				"file" : 12,
-				"parent" : 78
+				"parent" : 79
 			},
 			{
 				"command" : 3,
 				"file" : 12,
 				"line" : 24,
-				"parent" : 79
+				"parent" : 80
 			},
 			{
 				"file" : 11,
-				"parent" : 80
+				"parent" : 81
 			},
 			{
 				"command" : 2,
 				"file" : 11,
 				"line" : 15,
-				"parent" : 81
+				"parent" : 82
 			},
 			{
 				"command" : 5,
@@ -535,223 +541,223 @@
 				"command" : 4,
 				"file" : 7,
 				"line" : 76,
-				"parent" : 83
+				"parent" : 84
 			},
 			{
 				"file" : 16,
-				"parent" : 84
+				"parent" : 85
 			},
 			{
 				"command" : 3,
 				"file" : 16,
 				"line" : 16,
-				"parent" : 85
+				"parent" : 86
 			},
 			{
 				"file" : 15,
-				"parent" : 86
+				"parent" : 87
 			},
 			{
 				"command" : 3,
 				"file" : 15,
 				"line" : 28,
-				"parent" : 87
-			},
-			{
-				"file" : 14,
 				"parent" : 88
 			},
 			{
-				"command" : 2,
 				"file" : 14,
-				"line" : 38,
 				"parent" : 89
 			},
 			{
+				"command" : 2,
+				"file" : 14,
+				"line" : 38,
+				"parent" : 90
+			},
+			{
 				"command" : 5,
 				"file" : 16,
 				"line" : 24,
-				"parent" : 85
+				"parent" : 86
 			},
 			{
 				"command" : 4,
 				"file" : 7,
 				"line" : 76,
-				"parent" : 91
-			},
-			{
-				"file" : 19,
 				"parent" : 92
 			},
 			{
-				"command" : 3,
 				"file" : 19,
-				"line" : 16,
 				"parent" : 93
 			},
 			{
-				"file" : 18,
+				"command" : 3,
+				"file" : 19,
+				"line" : 16,
 				"parent" : 94
 			},
 			{
-				"command" : 3,
 				"file" : 18,
-				"line" : 24,
 				"parent" : 95
 			},
 			{
-				"file" : 17,
+				"command" : 3,
+				"file" : 18,
+				"line" : 24,
 				"parent" : 96
+			},
+			{
+				"file" : 17,
+				"parent" : 97
 			},
 			{
 				"command" : 2,
 				"file" : 17,
 				"line" : 38,
-				"parent" : 97
+				"parent" : 98
 			},
 			{
 				"command" : 5,
 				"file" : 19,
 				"line" : 24,
-				"parent" : 93
+				"parent" : 94
 			},
 			{
 				"command" : 4,
 				"file" : 7,
 				"line" : 76,
-				"parent" : 99
-			},
-			{
-				"file" : 22,
 				"parent" : 100
 			},
 			{
-				"command" : 3,
 				"file" : 22,
-				"line" : 16,
 				"parent" : 101
 			},
 			{
-				"file" : 21,
+				"command" : 3,
+				"file" : 22,
+				"line" : 16,
 				"parent" : 102
 			},
 			{
-				"command" : 3,
 				"file" : 21,
-				"line" : 24,
 				"parent" : 103
 			},
 			{
-				"file" : 20,
+				"command" : 3,
+				"file" : 21,
+				"line" : 24,
 				"parent" : 104
 			},
 			{
-				"command" : 2,
 				"file" : 20,
-				"line" : 38,
 				"parent" : 105
 			},
 			{
+				"command" : 2,
+				"file" : 20,
+				"line" : 38,
+				"parent" : 106
+			},
+			{
 				"command" : 5,
 				"file" : 16,
 				"line" : 24,
-				"parent" : 85
+				"parent" : 86
 			},
 			{
 				"command" : 4,
 				"file" : 7,
 				"line" : 76,
-				"parent" : 107
+				"parent" : 108
 			},
 			{
 				"file" : 25,
-				"parent" : 108
+				"parent" : 109
 			},
 			{
 				"command" : 3,
 				"file" : 25,
 				"line" : 16,
-				"parent" : 109
+				"parent" : 110
 			},
 			{
 				"file" : 24,
-				"parent" : 110
+				"parent" : 111
 			},
 			{
 				"command" : 3,
 				"file" : 24,
 				"line" : 24,
-				"parent" : 111
+				"parent" : 112
 			},
 			{
 				"file" : 23,
-				"parent" : 112
+				"parent" : 113
 			},
 			{
 				"command" : 2,
 				"file" : 23,
 				"line" : 38,
-				"parent" : 113
+				"parent" : 114
 			},
 			{
 				"command" : 5,
 				"file" : 16,
 				"line" : 24,
-				"parent" : 85
+				"parent" : 86
 			},
 			{
 				"command" : 4,
 				"file" : 7,
 				"line" : 76,
-				"parent" : 115
+				"parent" : 116
 			},
 			{
 				"file" : 28,
-				"parent" : 116
+				"parent" : 117
 			},
 			{
 				"command" : 3,
 				"file" : 28,
 				"line" : 16,
-				"parent" : 117
+				"parent" : 118
 			},
 			{
 				"file" : 27,
-				"parent" : 118
+				"parent" : 119
 			},
 			{
 				"command" : 3,
 				"file" : 27,
 				"line" : 24,
-				"parent" : 119
+				"parent" : 120
 			},
 			{
 				"file" : 26,
-				"parent" : 120
+				"parent" : 121
 			},
 			{
 				"command" : 2,
 				"file" : 26,
 				"line" : 73,
-				"parent" : 121
+				"parent" : 122
 			},
 			{
 				"command" : 2,
 				"file" : 14,
 				"line" : 15,
-				"parent" : 89
+				"parent" : 90
 			},
 			{
 				"command" : 2,
 				"file" : 26,
 				"line" : 133,
-				"parent" : 121
+				"parent" : 122
 			},
 			{
 				"command" : 2,
 				"file" : 26,
 				"line" : 193,
-				"parent" : 121
+				"parent" : 122
 			},
 			{
 				"command" : 6,
@@ -767,13 +773,13 @@
 			},
 			{
 				"file" : 29,
-				"parent" : 127
+				"parent" : 128
 			},
 			{
 				"command" : 7,
 				"file" : 29,
 				"line" : 12,
-				"parent" : 128
+				"parent" : 129
 			}
 		]
 	},
@@ -789,7 +795,7 @@
 			"defines" : 
 			[
 				{
-					"backtrace" : 126,
+					"backtrace" : 127,
 					"define" : "PROJECT_NAME=\"Pong\""
 				},
 				{
@@ -817,11 +823,13 @@
 			"sourceIndexes" : 
 			[
 				0,
-				2,
-				4,
-				6,
-				8,
-				10
+				3,
+				5,
+				7,
+				9,
+				12,
+				14,
+				16
 			]
 		}
 	],
@@ -979,166 +987,171 @@
 			},
 			{
 				"backtrace" : 43,
-				"fragment" : "-lxcb-render-util",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 43,
-				"fragment" : "-lxcb-render",
+				"fragment" : "-lxcb-shape",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 44,
-				"fragment" : "-lxcb-randr",
+				"fragment" : "-lxcb-render-util",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 44,
+				"fragment" : "-lxcb-render",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 45,
-				"fragment" : "-lxcb-keysyms",
+				"fragment" : "-lxcb-randr",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 46,
-				"fragment" : "-lxcb-image",
+				"fragment" : "-lxcb-keysyms",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 47,
-				"fragment" : "-lxcb-shm",
+				"fragment" : "-lxcb-image",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 48,
-				"fragment" : "-lxcb-icccm",
+				"fragment" : "-lxcb-shm",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 49,
-				"fragment" : "-lxcb-xkb",
+				"fragment" : "-lxcb-icccm",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 50,
-				"fragment" : "-lXxf86vm",
+				"fragment" : "-lxcb-xkb",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 51,
-				"fragment" : "-lXv",
+				"fragment" : "-lXxf86vm",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 52,
-				"fragment" : "-lXtst",
+				"fragment" : "-lXv",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 53,
-				"fragment" : "-lXss",
+				"fragment" : "-lXtst",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 54,
-				"fragment" : "-lXRes",
+				"fragment" : "-lXss",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 55,
-				"fragment" : "-lXrender",
+				"fragment" : "-lXRes",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 56,
-				"fragment" : "-lXrandr",
+				"fragment" : "-lXrender",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 57,
-				"fragment" : "-lXpm",
+				"fragment" : "-lXrandr",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 58,
-				"fragment" : "-lXmuu",
+				"fragment" : "-lXpm",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 59,
-				"fragment" : "-lXmu",
+				"fragment" : "-lXmuu",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 60,
-				"fragment" : "-lxkbfile",
+				"fragment" : "-lXmu",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 61,
-				"fragment" : "-lXinerama",
+				"fragment" : "-lxkbfile",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 62,
-				"fragment" : "-lXi",
+				"fragment" : "-lXinerama",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 63,
-				"fragment" : "-lXext",
+				"fragment" : "-lXi",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 64,
-				"fragment" : "-lXdmcp",
+				"fragment" : "-lXext",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 65,
-				"fragment" : "-lXdamage",
+				"fragment" : "-lXdmcp",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 66,
-				"fragment" : "-lXfixes",
+				"fragment" : "-lXdamage",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 67,
-				"fragment" : "-lXcursor",
+				"fragment" : "-lXfixes",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 68,
-				"fragment" : "-lXcomposite",
+				"fragment" : "-lXcursor",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 69,
-				"fragment" : "-lXaw7",
+				"fragment" : "-lXcomposite",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 70,
-				"fragment" : "-lXt",
+				"fragment" : "-lXaw7",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 71,
-				"fragment" : "-lXau",
+				"fragment" : "-lXt",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 72,
-				"fragment" : "-lICE",
+				"fragment" : "-lXau",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 73,
-				"fragment" : "-lfontenc",
+				"fragment" : "-lICE",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 74,
+				"fragment" : "-lfontenc",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 75,
 				"fragment" : "-lX11-xcb",
 				"role" : "libraries"
 			},
@@ -1148,52 +1161,52 @@
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 70,
+				"backtrace" : 71,
 				"fragment" : "-lX11",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 82,
+				"backtrace" : 83,
 				"fragment" : "-ludev",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 90,
+				"backtrace" : 91,
 				"fragment" : "/root/.conan2/p/b/freet5f12ef988b59c/p/lib/libfreetype.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 98,
+				"backtrace" : 99,
 				"fragment" : "/root/.conan2/p/b/libpn024ba8f3dc7ed/p/lib/libpng.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 106,
+				"backtrace" : 107,
 				"fragment" : "/root/.conan2/p/b/zlib5979270e2df32/p/lib/libz.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 114,
+				"backtrace" : 115,
 				"fragment" : "/root/.conan2/p/b/bzip272775782a09f1/p/lib/libbz2.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 122,
+				"backtrace" : 123,
 				"fragment" : "/root/.conan2/p/b/brotl70b3e5aee6b98/p/lib/libbrotlienc.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 123,
+				"backtrace" : 124,
 				"fragment" : "-lm",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 124,
+				"backtrace" : 125,
 				"fragment" : "/root/.conan2/p/b/brotl70b3e5aee6b98/p/lib/libbrotlidec.a",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 125,
+				"backtrace" : 126,
 				"fragment" : "/root/.conan2/p/b/brotl70b3e5aee6b98/p/lib/libbrotlicommon.a",
 				"role" : "libraries"
 			}
@@ -1214,11 +1227,13 @@
 			"sourceIndexes" : 
 			[
 				0,
-				2,
-				4,
-				6,
-				8,
-				10
+				3,
+				5,
+				7,
+				9,
+				12,
+				14,
+				16
 			]
 		},
 		{
@@ -1226,72 +1241,108 @@
 			"sourceIndexes" : 
 			[
 				1,
-				3,
-				5,
-				7,
-				9
+				2,
+				4,
+				6,
+				8,
+				10,
+				11,
+				13,
+				15
 			]
 		}
 	],
 	"sources" : 
 	[
 		{
-			"backtrace" : 129,
+			"backtrace" : 130,
+			"compileGroupIndex" : 0,
+			"path" : "src/AIPlayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 130,
+			"path" : "src/AIPlayer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 130,
+			"path" : "src/AbstractPlayer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 130,
 			"compileGroupIndex" : 0,
 			"path" : "src/Ball.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 129,
+			"backtrace" : 130,
 			"path" : "src/Ball.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 129,
+			"backtrace" : 130,
 			"compileGroupIndex" : 0,
 			"path" : "src/Game.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 129,
+			"backtrace" : 130,
 			"path" : "src/Game.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 129,
+			"backtrace" : 130,
+			"compileGroupIndex" : 0,
+			"path" : "src/GameObject.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 130,
+			"path" : "src/GameObject.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 130,
+			"compileGroupIndex" : 0,
+			"path" : "src/HumanPlayer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 130,
+			"path" : "src/HumanPlayer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 130,
+			"path" : "src/Observer.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 130,
 			"compileGroupIndex" : 0,
 			"path" : "src/Paddle.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 129,
+			"backtrace" : 130,
 			"path" : "src/Paddle.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 129,
-			"compileGroupIndex" : 0,
-			"path" : "src/Player.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 129,
-			"path" : "src/Player.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 129,
+			"backtrace" : 130,
 			"compileGroupIndex" : 0,
 			"path" : "src/Score.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 129,
+			"backtrace" : 130,
 			"path" : "src/Score.h",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 129,
+			"backtrace" : 130,
 			"compileGroupIndex" : 0,
 			"path" : "src/main.cpp",
 			"sourceGroupIndex" : 0

@@ -6,7 +6,7 @@
         text_.setPosition(position);
         text_.setFillColor(sf::Color::White);
         text_.setCharacterSize(size);
-    updateText();
+    reset();
 }
 void Score::increase() {
     ++value_;
@@ -39,5 +39,12 @@ void Score::updateText() {
     
     // Centra il testo sulla posizione originale
     sf::FloatRect bounds = text_.getLocalBounds();
-    text_.setOrigin(bounds.width / 2.f, bounds.height / 2.f);
+    //text_.setOrigin(bounds.width / 2.f, bounds.height / 2.f);
+}
+
+void Score::update(const GameObject& obj){
+    increase();
+}
+void Score::setFont(const sf::Font& font){
+    text_.setFont(font);
 }

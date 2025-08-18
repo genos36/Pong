@@ -1,53 +1,93 @@
 #include "Paddle.h"
+#include "Game.h"
 
-Paddle::Paddle(const sf::Vector2f& size, const sf::Vector2f& position) 
-    : shape_(size), speed_(500.f) {
-    shape_.setPosition(position);
-    shape_.setFillColor(sf::Color::White);
-    shape_.setOrigin(size.x / 2.f, size.y / 2.f); // Centro come origine
+void Paddle::onBoundaryHit(const BoundaryCheck&) {};
+
+sf::FloatRect Paddle::getGlobalBounds() const{
+    return shape_.getGlobalBounds();
 }
 
+void Paddle::syncTransform(){
+    sf::Transformable tempTransform=getTransform();
+    shape_.setPosition(tempTransform.getPosition());
+    shape_.setRotation(tempTransform.getRotation());
+    shape_.setScale(tempTransform.getScale());
+}
+
+Paddle::Paddle(const sf::Vector2f& size, const sf::Vector2f& startPosition) 
+    : shape_(size), velocity_(0.0f, 5.0f),startPosition_(startPosition),controller_(nullptr) {
+    setPosition(startPosition);
+    setFillColor(sf::Color::White);
+}
+
+
+
 void Paddle::update(float deltaTime) {
-    shape_.move(velocity_ * deltaTime); //aggiorna la posizione partendo dal valore attuale
+        if (controller_) {
+            controller_->update(deltaTime, *this);
+        }    
     }
 
-void Paddle::draw(sf::RenderWindow& window)const{
+
+void Paddle::draw(sf::RenderTarget& window)const{
     window.draw(shape_);
 }
 
+    void Paddle::handleCollision(GameObject& other) {}
+
+    void Paddle::handleBoundaries(const BoundaryCheck& bound) {
+        switch(bound){
+            
+            case BoundaryCheck::BOTTOM:
+                setPosition(sf::Vector2f(getPosition().x,getPosition().y-10.f));
+                break;
+            case BoundaryCheck::TOP:
+                setPosition(sf::Vector2f(getPosition().x,getPosition().y+10.f));
+                break;
+            case BoundaryCheck::RIGHT:
+            case BoundaryCheck::LEFT:
+            default: return;
+        }
+    }
+
+
+
+
 void Paddle::moveUp() {
-    velocity_.y = -speed_;
+    velocity_.y = -abs(velocity_.y );
 }
 
 void Paddle::moveDown() {
-    velocity_.y = speed_;
+    velocity_.y = abs(velocity_.y );
 }
 
 void Paddle::stop() {
-    velocity_.y = 0.f;
+    velocity_.y = 0.0f;
 }
 
-void Paddle::setSpeed(float speed) {
-    speed_ = speed;
-}
 
 void Paddle::setFillColor(const sf::Color& color) {
     shape_.setFillColor(color);
-}
-
-void Paddle::setPosition(float x, float y){
-    shape_.setPosition(sf::Vector2f(x,y));
-}
-
-sf::Vector2f Paddle::getPosition() const {
-    return shape_.getPosition();
-}
-
-sf::FloatRect Paddle::getGlobalBounds() const {
-    return shape_.getGlobalBounds();
 }
 
 sf::Vector2f Paddle::getSize() const {
     return shape_.getSize();
 }
 
+bool Paddle::shouldCollide(const GameObject& other) const {
+    return false;
+}
+
+
+    void Paddle::setController(std::unique_ptr<AbstractPlayer> controller) {
+        controller_ = std::move(controller);
+    }
+
+
+    void Paddle::reset(){
+        setPosition(startPosition_);
+        velocity_=sf::Vector2f(0.0f,0.0f);
+    }
+
+
+    const sf::Vector2f& Paddle::getVelocity()const {return velocity_;}

@@ -2,6 +2,18 @@
 	"entries" : 
 	[
 		{
+			"name" : "2.5.1_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for 2.5.1."
+				}
+			],
+			"type" : "PATH",
+			"value" : "2.5.1_DIR-NOTFOUND"
+		},
+		{
 			"name" : "ALSA_DIR",
 			"properties" : 
 			[

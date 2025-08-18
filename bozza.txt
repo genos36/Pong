@@ -1,0 +1,26 @@
+thank you for your advices.
+
+regarding game object
+a) i chose to not implement a Parent-Child System
+
+
+b)i chose to use a transformable because it make the managing of complex object made of multiple shapes, so it could be usefull for code reuse, making game object a good starting point for others projects
+    so a good decision could be making the transformable a private member and i think it's a good approach
+    talking about sync, i think i didn't really understand what a sync could mean in this contest, what we need to handle ?
+    
+c) can you explain what is a template method pattern ?
+
+d)about boundry handling, a better choice could be similar to what i made for collision: declaring a method for checking e another one for handling the boundry collision
+
+regarding ball
+a)yeah, trail as a ball member is a bad thing, probably i should go for a new class (trail) with a one argument constructor that use ball
+
+b)what are you suggesting as builder pattern
+
+c)so I should go with something like shape_.setPosition(transformable.getPosition()) or what ???
+
+about the Architecture 
+1) i chose to use inheritance because with this Architecture i can manage the objects in more flexible way,so i can try more complex projects starting with an already existing starting point.
+a thing that i can do using inheritance is for example: having a vector<gameObject> and i can call the various function from that vector in a foreach loop
+
+2)i implemented an observer desing pattern because believe is a more flexible approach, i don't know if the overhead caused by the virtual behaviour of the funcions

@@ -129,6 +129,30 @@ Pong/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/build
 .PHONY : Pong/fast
 
+src/AIPlayer.o: src/AIPlayer.cpp.o
+.PHONY : src/AIPlayer.o
+
+# target to build an object file
+src/AIPlayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/src/AIPlayer.cpp.o
+.PHONY : src/AIPlayer.cpp.o
+
+src/AIPlayer.i: src/AIPlayer.cpp.i
+.PHONY : src/AIPlayer.i
+
+# target to preprocess a source file
+src/AIPlayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/src/AIPlayer.cpp.i
+.PHONY : src/AIPlayer.cpp.i
+
+src/AIPlayer.s: src/AIPlayer.cpp.s
+.PHONY : src/AIPlayer.s
+
+# target to generate assembly for a file
+src/AIPlayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/src/AIPlayer.cpp.s
+.PHONY : src/AIPlayer.cpp.s
+
 src/Ball.o: src/Ball.cpp.o
 .PHONY : src/Ball.o
 
@@ -177,6 +201,54 @@ src/Game.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/src/Game.cpp.s
 .PHONY : src/Game.cpp.s
 
+src/GameObject.o: src/GameObject.cpp.o
+.PHONY : src/GameObject.o
+
+# target to build an object file
+src/GameObject.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/src/GameObject.cpp.o
+.PHONY : src/GameObject.cpp.o
+
+src/GameObject.i: src/GameObject.cpp.i
+.PHONY : src/GameObject.i
+
+# target to preprocess a source file
+src/GameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/src/GameObject.cpp.i
+.PHONY : src/GameObject.cpp.i
+
+src/GameObject.s: src/GameObject.cpp.s
+.PHONY : src/GameObject.s
+
+# target to generate assembly for a file
+src/GameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/src/GameObject.cpp.s
+.PHONY : src/GameObject.cpp.s
+
+src/HumanPlayer.o: src/HumanPlayer.cpp.o
+.PHONY : src/HumanPlayer.o
+
+# target to build an object file
+src/HumanPlayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/src/HumanPlayer.cpp.o
+.PHONY : src/HumanPlayer.cpp.o
+
+src/HumanPlayer.i: src/HumanPlayer.cpp.i
+.PHONY : src/HumanPlayer.i
+
+# target to preprocess a source file
+src/HumanPlayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/src/HumanPlayer.cpp.i
+.PHONY : src/HumanPlayer.cpp.i
+
+src/HumanPlayer.s: src/HumanPlayer.cpp.s
+.PHONY : src/HumanPlayer.s
+
+# target to generate assembly for a file
+src/HumanPlayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/src/HumanPlayer.cpp.s
+.PHONY : src/HumanPlayer.cpp.s
+
 src/Paddle.o: src/Paddle.cpp.o
 .PHONY : src/Paddle.o
 
@@ -200,30 +272,6 @@ src/Paddle.s: src/Paddle.cpp.s
 src/Paddle.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/src/Paddle.cpp.s
 .PHONY : src/Paddle.cpp.s
-
-src/Player.o: src/Player.cpp.o
-.PHONY : src/Player.o
-
-# target to build an object file
-src/Player.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/src/Player.cpp.o
-.PHONY : src/Player.cpp.o
-
-src/Player.i: src/Player.cpp.i
-.PHONY : src/Player.i
-
-# target to preprocess a source file
-src/Player.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/src/Player.cpp.i
-.PHONY : src/Player.cpp.i
-
-src/Player.s: src/Player.cpp.s
-.PHONY : src/Player.s
-
-# target to generate assembly for a file
-src/Player.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Pong.dir/build.make CMakeFiles/Pong.dir/src/Player.cpp.s
-.PHONY : src/Player.cpp.s
 
 src/Score.o: src/Score.cpp.o
 .PHONY : src/Score.o
@@ -282,18 +330,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Pong"
+	@echo "... src/AIPlayer.o"
+	@echo "... src/AIPlayer.i"
+	@echo "... src/AIPlayer.s"
 	@echo "... src/Ball.o"
 	@echo "... src/Ball.i"
 	@echo "... src/Ball.s"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
+	@echo "... src/GameObject.o"
+	@echo "... src/GameObject.i"
+	@echo "... src/GameObject.s"
+	@echo "... src/HumanPlayer.o"
+	@echo "... src/HumanPlayer.i"
+	@echo "... src/HumanPlayer.s"
 	@echo "... src/Paddle.o"
 	@echo "... src/Paddle.i"
 	@echo "... src/Paddle.s"
-	@echo "... src/Player.o"
-	@echo "... src/Player.i"
-	@echo "... src/Player.s"
 	@echo "... src/Score.o"
 	@echo "... src/Score.i"
 	@echo "... src/Score.s"

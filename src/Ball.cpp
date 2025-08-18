@@ -2,22 +2,25 @@
 #include <cmath>
 #include <typeinfo>
 
-Ball::Ball(float radius, const sf::Vector2f& startPosition, GameObject* parent=nullptr)
-    :GameObject(parent),
-    shape_(radius),
-    velocity_(),
+
+
+Ball::Ball(float radius, const sf::Vector2f& startPosition)
+    :shape_(radius),
+    velocity_(INITIAL_VELOCITY,INITIAL_VELOCITY),
     startPosition_(startPosition){
         setPosition(startPosition);
-        shape_.setFillColor(sf::Color::White);  //riempiemento colore
-        shape_.setOrigin(radius,radius);        //centra l'origine
+        shape_.setFillColor(sf::Color::Green);  //riempiemento colore
+
         reset();
     }
 
 
 
 void Ball::syncTransform(){
+    auto transform=getTransform();
     shape_.setPosition(transform.getPosition());
     shape_.setRotation(transform.getRotation());
+    shape_.setScale(transform.getScale());
 }
 
 
@@ -35,20 +38,26 @@ void Ball::draw(sf::RenderTarget& target) const{
         
         // Velocità iniziale casuale (sinistra/destra)
         float angle = (rand() % 60 - 30) * 3.14159f / 180.f; // angolo casuale da -30 gradi a +30
-        velocity_.x*=std::cos(angle);
-        velocity_.y*=std::sin(angle);
+        velocity_.x=INITIAL_VELOCITY*std::cos(angle);
+        velocity_.y=INITIAL_VELOCITY*std::sin(angle);
     }
     
     
     
     void Ball::bounceX() {
-        velocity_.x *= -1;
-        // Aumenta leggermente la velocità dopo ogni rimbalzo
-        velocity_ *= 1.05f; 
+        velocity_.x *= -1.0f;
+        if(abs(std::sqrt(velocity_.x*velocity_.x + velocity_.y*velocity_.y)<MAX_SPEED)){
+            velocity_*=BOOST_FACTOR;
+        }        
+        notifyAll(); // Notify observers
     }
     
     void Ball::bounceY() {
-        velocity_.y *= -1;
+        velocity_.y *= -1.0f;
+        if(abs(std::sqrt(velocity_.x*velocity_.x + velocity_.y*velocity_.y)<MAX_SPEED)){
+            velocity_*=BOOST_FACTOR;
+        } 
+        notifyAll(); // Notify observers
     }
     
     void Ball::setFillColor(sf::Color color) {
@@ -68,28 +77,39 @@ void Ball::draw(sf::RenderTarget& target) const{
     
  void Ball::handleCollision(GameObject& other){
     if(checkCollision(other)){
-        bounceY();
+        switch(getCollisionSide(other)){
+            case BoundaryCheck::RIGHT:
+            case BoundaryCheck::LEFT:
+                bounceX();
+                break;
+            case BoundaryCheck::BOTTOM:
+            case BoundaryCheck::TOP:
+                bounceY();
+                break;
+                
+        }
     }
  }
 
-void Ball::setPosition(const sf::Vector2f& position){
-    GameObject::setPosition(position);
-    shape_.setPosition(position);
+
+void Ball::onBoundaryHit(const BoundaryCheck& bound){
+    notifyAll();
+
 }
+
+void Ball::handleBoundaries(const BoundaryCheck& bound) {
+    switch(bound) {
+        case BoundaryCheck::LEFT:
+        case BoundaryCheck::RIGHT:
+            bounceX();
+            break;
+        case BoundaryCheck::TOP:
+        case BoundaryCheck::BOTTOM:
+            bounceY();
+            break;
+        default: break;
+    }
     
-void Ball::move(const sf::Vector2f& offset){
-    GameObject::move(offset);
-    shape_.move(offset);
-}
-
-void Ball::updateTrail() {
-    sf::CircleShape trailDot = shape_;
-    trailDot.setRadius(shape_.getRadius() * 0.7f);
-    trail_.push_back(trailDot);
-    if (trail_.size() > 5) trail_.erase(trail_.begin());
 }
 
 
-void Ball::onBoundaryHit(){
-    bounceX();
-}

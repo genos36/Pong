@@ -639,35 +639,35 @@ set(xorg_xorg_xcb-shm_COMPILE_OPTIONS_RELEASE
     "$<$<COMPILE_LANGUAGE:C>:${xorg_xorg_xcb-shm_COMPILE_OPTIONS_C_RELEASE}>")
 ########### COMPONENT xorg::xcb-shape VARIABLES ############################################
 
-set(xorg_xorg_xcb-transformINCLUDE_DIRS_RELEASE )
-set(xorg_xorg_xcb-transformLIB_DIRS_RELEASE )
-set(xorg_xorg_xcb-transformBIN_DIRS_RELEASE )
-set(xorg_xorg_xcb-transformLIBRARY_TYPE_RELEASE SHARED)
-set(xorg_xorg_xcb-transformIS_HOST_WINDOWS_RELEASE 0)
-set(xorg_xorg_xcb-transformRES_DIRS_RELEASE )
-set(xorg_xorg_xcb-transformDEFINITIONS_RELEASE )
-set(xorg_xorg_xcb-transformOBJECTS_RELEASE )
-set(xorg_xorg_xcb-transformCOMPILE_DEFINITIONS_RELEASE )
-set(xorg_xorg_xcb-transformCOMPILE_OPTIONS_C_RELEASE "")
-set(xorg_xorg_xcb-transformCOMPILE_OPTIONS_CXX_RELEASE "")
-set(xorg_xorg_xcb-transformLIBS_RELEASE )
-set(xorg_xorg_xcb-transformSYSTEM_LIBS_RELEASE xcb-shape)
-set(xorg_xorg_xcb-transformFRAMEWORK_DIRS_RELEASE )
-set(xorg_xorg_xcb-transformFRAMEWORKS_RELEASE )
-set(xorg_xorg_xcb-transformDEPENDENCIES_RELEASE )
-set(xorg_xorg_xcb-transformSHARED_LINK_FLAGS_RELEASE )
-set(xorg_xorg_xcb-transformEXE_LINK_FLAGS_RELEASE )
-set(xorg_xorg_xcb-transformNO_SONAME_MODE_RELEASE FALSE)
+set(xorg_xorg_xcb-shape_INCLUDE_DIRS_RELEASE )
+set(xorg_xorg_xcb-shape_LIB_DIRS_RELEASE )
+set(xorg_xorg_xcb-shape_BIN_DIRS_RELEASE )
+set(xorg_xorg_xcb-shape_LIBRARY_TYPE_RELEASE SHARED)
+set(xorg_xorg_xcb-shape_IS_HOST_WINDOWS_RELEASE 0)
+set(xorg_xorg_xcb-shape_RES_DIRS_RELEASE )
+set(xorg_xorg_xcb-shape_DEFINITIONS_RELEASE )
+set(xorg_xorg_xcb-shape_OBJECTS_RELEASE )
+set(xorg_xorg_xcb-shape_COMPILE_DEFINITIONS_RELEASE )
+set(xorg_xorg_xcb-shape_COMPILE_OPTIONS_C_RELEASE "")
+set(xorg_xorg_xcb-shape_COMPILE_OPTIONS_CXX_RELEASE "")
+set(xorg_xorg_xcb-shape_LIBS_RELEASE )
+set(xorg_xorg_xcb-shape_SYSTEM_LIBS_RELEASE xcb-shape)
+set(xorg_xorg_xcb-shape_FRAMEWORK_DIRS_RELEASE )
+set(xorg_xorg_xcb-shape_FRAMEWORKS_RELEASE )
+set(xorg_xorg_xcb-shape_DEPENDENCIES_RELEASE )
+set(xorg_xorg_xcb-shape_SHARED_LINK_FLAGS_RELEASE )
+set(xorg_xorg_xcb-shape_EXE_LINK_FLAGS_RELEASE )
+set(xorg_xorg_xcb-shape_NO_SONAME_MODE_RELEASE FALSE)
 
 # COMPOUND VARIABLES
-set(xorg_xorg_xcb-transformLINKER_FLAGS_RELEASE
-        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${xorg_xorg_xcb-transformSHARED_LINK_FLAGS_RELEASE}>
-        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${xorg_xorg_xcb-transformSHARED_LINK_FLAGS_RELEASE}>
-        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${xorg_xorg_xcb-transformEXE_LINK_FLAGS_RELEASE}>
+set(xorg_xorg_xcb-shape_LINKER_FLAGS_RELEASE
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${xorg_xorg_xcb-shape_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${xorg_xorg_xcb-shape_SHARED_LINK_FLAGS_RELEASE}>
+        $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${xorg_xorg_xcb-shape_EXE_LINK_FLAGS_RELEASE}>
 )
-set(xorg_xorg_xcb-transformCOMPILE_OPTIONS_RELEASE
-    "$<$<COMPILE_LANGUAGE:CXX>:${xorg_xorg_xcb-transformCOMPILE_OPTIONS_CXX_RELEASE}>"
-    "$<$<COMPILE_LANGUAGE:C>:${xorg_xorg_xcb-transformCOMPILE_OPTIONS_C_RELEASE}>")
+set(xorg_xorg_xcb-shape_COMPILE_OPTIONS_RELEASE
+    "$<$<COMPILE_LANGUAGE:CXX>:${xorg_xorg_xcb-shape_COMPILE_OPTIONS_CXX_RELEASE}>"
+    "$<$<COMPILE_LANGUAGE:C>:${xorg_xorg_xcb-shape_COMPILE_OPTIONS_C_RELEASE}>")
 ########### COMPONENT xorg::xcb-renderutil VARIABLES ############################################
 
 set(xorg_xorg_xcb-renderutil_INCLUDE_DIRS_RELEASE )

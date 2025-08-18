@@ -1,6 +1,6 @@
-CMakeFiles/Pong.dir/src/Score.cpp.o: \
- /home/esercitazioni/pong/src/Score.cpp /usr/include/stdc-predef.h \
- /home/esercitazioni/pong/src/Score.h /usr/include/SFML/Graphics.hpp \
+CMakeFiles/Pong.dir/src/GameObject.cpp.o: \
+ /home/esercitazioni/pong/src/GameObject.cpp /usr/include/stdc-predef.h \
+ /home/esercitazioni/pong/src/GameObject.h /usr/include/SFML/Graphics.hpp \
  /usr/include/SFML/Window.hpp /usr/include/SFML/System.hpp \
  /usr/include/SFML/Config.hpp /usr/include/SFML/System/Clock.hpp \
  /usr/include/SFML/System/Export.hpp /usr/include/SFML/System/Time.hpp \
@@ -242,9 +242,7 @@ CMakeFiles/Pong.dir/src/Score.cpp.o: \
  /usr/include/SFML/Graphics/Glsl.hpp /usr/include/SFML/Graphics/Glsl.inl \
  /usr/include/SFML/Graphics/Sprite.hpp \
  /usr/include/SFML/Graphics/Text.hpp \
- /usr/include/SFML/Graphics/VertexBuffer.hpp \
- /home/esercitazioni/pong/src/Observer.h \
- /home/esercitazioni/pong/src/GameObject.h /usr/include/c++/13/memory \
+ /usr/include/SFML/Graphics/VertexBuffer.hpp /usr/include/c++/13/memory \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13/bits/align.h /usr/include/c++/13/bits/unique_ptr.h \
  /usr/include/c++/13/bits/shared_ptr.h \
@@ -255,4 +253,5 @@ CMakeFiles/Pong.dir/src/Score.cpp.o: \
  /usr/include/c++/13/bits/atomic_base.h \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
  /usr/include/c++/13/backward/auto_ptr.h \
- /usr/include/c++/13/pstl/glue_memory_defs.h
+ /usr/include/c++/13/pstl/glue_memory_defs.h \
+ /home/esercitazioni/pong/src/Observer.h

@@ -4,48 +4,68 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include <memory>
+#include "Observer.h"
+class Observer;
+
+enum BoundaryCheck{
+    NONE=0,
+    LEFT,
+    RIGHT,
+    TOP,
+    BOTTOM
+};
+
 
 class GameObject {   
 private:
-    GameObject* parent = nullptr;  // Puntatore al padre (opzionale)    
     bool isActive;
+    sf::Transformable transform;  // Gestisce posizione/rotazione/scala
+    std::vector<Observer*> observers;
     
 protected:
-    sf::Transformable transform;  // Gestisce posizione/rotazione/scala
     
-    virtual void onBoundaryHit();// Callback per eventi
+    virtual void onBoundaryHit(const BoundaryCheck&);// Callback per eventi
+    const sf::Transformable& getTransform() const;
+    virtual sf::FloatRect getGlobalBounds() const = 0;
+    virtual void syncTransform() = 0;
+    virtual bool shouldCollide(const GameObject& other)const;
 public:
 //Costruttore
-    GameObject(GameObject* parent=nullptr);
+    GameObject();
 
 //Distruttore virtuale
     virtual ~GameObject()=default;
 
 //predisposizione per gestire sincronizzazione transform ed eventuali shape
-    virtual void syncTransform() = 0;
+
+
 
 // Metodi core
     virtual void update(float deltaTime) = 0;
     virtual void draw(sf::RenderTarget& target) const = 0;
-    virtual sf::FloatRect getGlobalBounds() const = 0;
 
 // Collisioni
+    bool checkCollision(const GameObject& other) const;
     virtual void handleCollision(GameObject& other) = 0;
-    virtual bool checkCollision(const GameObject& other) const;
 
 // Gestione bordi
-    virtual void handleBoundaries(const sf::FloatRect& bounds);
+
+
+    BoundaryCheck checkBoundaries(const sf::FloatRect& bounds)const;
+    virtual void handleBoundaries(const BoundaryCheck& bound)=0;
 
 
 // Transform
-    virtual void setPosition(const sf::Vector2f& position);
+    void setPosition(const sf::Vector2f& position);//set position and sync
     
-    virtual void move(const sf::Vector2f& offset);
+    void move(const sf::Vector2f& offset);//move position and sync
 
     sf::Vector2f getPosition() const ;
 
+    void addObserver(Observer *);
+    void notifyAll();
 
-
+    BoundaryCheck getCollisionSide(const GameObject& paddle)const ;
 };
 
 #endif
